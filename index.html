@@ -20,10 +20,22 @@
   </style>
 </head>
 <body class="not-italic">
-  <header class="mx-[135px] mb-16">
+  <header class="mx-16 lg:mb-16">
     <nav>
-      <div class="navbar bg-base-100">
+      <div class="navbar bg-base-100 sm:flex sm:text-left">
         <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li class="text-[#FF4240] text-xl"><a>Home</a></li>
+              <li class="text-xl"><a>About</a></li>
+              <li class="text-xl"><a>Pages</a></li>
+              <li class="text-xl"><a>Blog</a></li>
+              <li class="text-xl"><a>Contact</a></li>
+            </ul>
+          </div>
           <a class="btn btn-ghost text-xl">Hockey’s</a>
         </div>
         <div class="navbar-center hidden lg:flex">
@@ -36,14 +48,18 @@
           </ul>
         </div>
         <div class="navbar-end">
-          <a class="btn btn-secondary inline-flex px-6 py-2.5 justify-center items-center gap-2.5 bg-[#FF4240] rounded-lg"><span class="text-[#FFF] text-center text-xl flex justify-center items-center">Get Ticket</span></a>
+          <button class="btn btn-ghost btn-circle hidden lg:inline">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+          </button>
+          <a class="btn btn-secondary inline-flex lg:px-6 lg:py-2.5 justify-center items-center lg:gap-2.5 bg-[#FF4240] sm:round-sm lg:rounded-lg"><span class="text-[#FFF] text-center sm: text-md lg:text-xl flex justify-center items-center">Get Ticket</span></a>
         </div>
       </div>
     </nav>
   </header>
-  <main class="mx-[135px]">
+
+  <main class="mx-11 lg:mx-16 lg:mb-16">
     <!--Banner Section-->
-    <section class="mb-16">
+    <section class=" mb-4 lg:mb-16">
       <div class="carousel w-full">
         <div id="slide1" class="carousel-item relative w-full">
           <img src="images/1.png" class="w-full" />
@@ -78,9 +94,9 @@
     <!--Professional Section-->
     <section class="mb-16">
       <h1 class="text-[#131318] text-center text-3xl font-extrabold">Professional Hockeys Club</h1>
-      <p class="text-[#13131899] text-center text-md font-medium leading-6 mb-10">Icy battleground where sticks clash, puck dances, and a spirited hockey family<br>
+      <p class="text-[#13131899] text-center text-md font-medium leading-6 lg:mb-10">Icy battleground where sticks clash, puck dances, and a spirited hockey family<br class="hidden lg:inline">
          embraces competition, resilience, and triumph.</p>
-      <div class="flex justify-evenly">
+      <div class="flex-cols lg:flex justify-evenly">
         <div class="p-4">
           <div class="relative mb-4">
             <img src="icons/87percent121by120.png" alt="">
@@ -120,7 +136,7 @@
       <h1 class="text-[#131318] text-center text-3xl font-extrabold">Program Sections</h1>
       <p class="text-[#13131899] text-center text-md font-medium leading-6 mb-10">Bold warriors on skates, weaving tales of triumph, fueled by passion,<br>
         skill, and unwavering team camaraderie.</p>
-      <div class="grid grid-cols-2 gap-6">
+      <div class="grid grid-cols-1 lg:grid lg:grid-cols-2 gap-6">
         <div class="hero min-h-screen" style="background-image: url(images/2.png);">
           <div class="hero-overlay bg-opacity-60"></div>
           <div class="hero-content text-center text-neutral-content">
@@ -141,7 +157,7 @@
             </div>
           </div>
         </div>
-        <div class="hero min-h-screen col-span-2" style="background-image: url(images/4.png);">
+        <div class="hero min-h-screen lg:col-span-2" style="background-image: url(images/4.png);">
           <div class="hero-overlay bg-opacity-60"></div>
           <div class="hero-content text-center text-neutral-content">
             <div class="max-w-md">
@@ -157,11 +173,11 @@
     <!--Our New Products Section-->
     <section class="mb-16">
       <h1 class="text-[#131318] text-center font-extrabold text-3xl">Our New Products</h1>
-      <p class="text-[#13131899] text-center text-md font-medium leading-6 mb-10">Innovative hockey league products: cutting-edge gear, fan-friendly merchandise, and interactive<br>
+      <p class="text-[#13131899] text-center text-md font-medium leading-6 mb-10">Innovative hockey league products: cutting-edge gear, fan-friendly merchandise, and interactive<br class="hidden lg:inline">
         experiences, elevating the fan connection and experience.</p>
-      <div class="lg:grid grid-cols-2">
+      <div class="grid grid-cols-1 lg:grid lg:grid-cols-2">
         <div class="card lg:card-side bg-base-100 shadow-xl ">
-          <figure><img src="images/5.png" alt="Album" class="w-[180px] h-[172px]"/></figure>
+          <figure><img src="images/5.png" alt="Album" class="w-full lg:w-[180px] lg:h-[172px]"/></figure>
           <div class="card-body">
             <div class="flex gap-8">
               <div class="flex">
@@ -189,7 +205,7 @@
           </div>
         </div>
         <div class="card lg:card-side bg-base-100 shadow-xl">
-          <figure><img src="images/6.png" alt="Album" class="w-[180px] h-[172px]"/></figure>
+          <figure><img src="images/6.png" alt="Album" class="w-full lg:w-[180px] lg:h-[172px]"/></figure>
           <div class="card-body">
             <div class="flex gap-8">
               <div class="flex">
@@ -217,7 +233,7 @@
           </div>
         </div>
         <div class="card lg:card-side bg-base-100 shadow-xl">
-          <figure><img src="images/7.png" alt="Album" class="w-[180px] h-[172px]"/></figure>
+          <figure><img src="images/7.png" alt="Album" class="w-full lg:w-[180px] lg:h-[172px]"/></figure>
           <div class="card-body">
             <div class="flex gap-8">
               <div class="flex">
@@ -245,7 +261,7 @@
           </div>
         </div>
         <div class="card lg:card-side bg-base-100 shadow-xl">
-          <figure><img src="images/8.png" alt="Album" class="w-[180px] h-[172px]"/></figure>
+          <figure><img src="images/8.png" alt="Album" class="w-full lg:w-[180px] lg:h-[172px]"/></figure>
           <div class="card-body">
             <div class="flex gap-8">
               <div class="flex">
@@ -273,7 +289,7 @@
           </div>
         </div>
         <div class="card lg:card-side bg-base-100 shadow-xl">
-          <figure><img src="images/9.png" alt="Album" class="w-[180px] h-[172px]"/></figure>
+          <figure><img src="images/9.png" alt="Album" class="w-full lg:w-[180px] lg:h-[172px]"/></figure>
           <div class="card-body">
             <div class="flex gap-8">
               <div class="flex gap-2">
@@ -301,7 +317,7 @@
           </div>
         </div>
         <div class="card lg:card-side bg-base-100 shadow-xl">
-          <figure><img src="images/10.png" alt="Album" class="w-[180px] h-[172px]"/></figure>
+          <figure><img src="images/10.png" alt="Album" class="w-full lg:w-[180px] lg:h-[172px]"/></figure>
           <div class="card-body">
             <div class="flex gap-8">
               <div class="flex">
@@ -335,11 +351,11 @@
       <h1 class="text-[#131318] text-center font-extrabold text-3xl">Clients Question</h1>
       <p class="text-[#13131899] text-center text-md font-medium leading-6 mb-10">Exploring diverse aspects of hockey league, my responses aim to <br>
         inform, engage, and provide relevant insights for clients.</p>
-        <div class="flex">
-          <div class="w-1/2">
+        <div class="flex-cols-1 lg:flex">
+          <div class="w-full p-6">
             <img src="images/11.png" alt="" class="w-[441px] h-[470] rounded-lg">
           </div>
-          <div class="w-1/2 p-6">
+          <div class="w-full p-6">
             <div class="collapse collapse-plus bg-base-200">
               <input type="radio" name="my-accordion-3" checked="checked" /> 
               <div class="collapse-title text-xl font-medium">
@@ -399,67 +415,67 @@
           </div>
     </section>
         <!--Get in Touch Section-->
-        <section class="mb-16">
+        <section class=" ">
           <h1 class="text-[#131318] text-center font-extrabold text-3xl">Get In Touch</h1>
           <p class="text-[#13131899] text-center text-md font-medium leading-6 mb-10">Connect with us for inquiries, collaborations, and information. We value <br>
             your engagement and look forward to communication.</p>
-            <div class="flex mb-4">
+            <div class="flex-cols-1 lg:flex mb-4">
               <div class="grid gap-[15px] mr-4 bg-[#FFF]">
-                <div class="w-[374px] h-[216px] rounded-2xl bg-[#bced6d33] p-8">
+                <div class="w-full h-[216px] rounded-2xl bg-[#bced6d33] p-8">
                   <img src="images/phone.png" alt="" class="w-[48px] h-[48px]">
                   <p>Phone Number : <br>
-                    <span>(+62) 123-321-543</span></p>
+                    <span class="font-black">(+62) 123-321-543</span></p>
                 </div>
-                <div class="w-[374px] h-[216px] rounded-2xl bg-[#fddd5f33] p-8">
+                <div class="w-full h-[216px] rounded-2xl bg-[#fddd5f33] p-8">
                   <img src="images/inbox.png" alt="" class="w-[48px] h-[48px]">
                   <p>Email : <br>
-                    <span>hockeys@support.com</span></p>
+                    <span class="font-black">hockeys@support.com</span></p>
                 </div>
-                <div class="w-[374px] h-[216px] rounded-2xl bg-[#629cf333] p-8">
+                <div class="w-full h-[216px] rounded-2xl bg-[#629cf333] p-8">
                   <img src="images/map.png" alt="" class="w-[48px] h-[48px]">
                   <p>Location : <br>
-                    <span>152/1 Mohakhali Wireless Gate</span></p>
+                    <span class="font-black">152/1 Mohakhali Wireless Gate</span></p>
                 </div>
               </div>
               <div>
                 <form>
                   <!-- First Row -->
-                  <div class="flex gap-8">
+                  <div class="flex-cols-1 lg:flex gap-8">
                     <div class="mb-4">
-                    <label for="name" class="block text-sm font-medium text-gray-700">Your Name</label>
-                    <input type="text" id="name" name="name" class="mt-1 p-2 border rounded-md w-[324px] h-[64px]" placeholder="Enter your full name">
+                    <label for="name" class="block text-sm font-extrabold text-gray-700">Your Name</label>
+                    <input type="text" id="name" name="name" class="mt-1 p-2 border rounded-md w-full lg:w-[324px] lg:h-[64px]" placeholder="Enter your full name">
                   </div>
                 
                   <div class="mb-4">
-                    <label for="email" class="block text-sm font-medium text-gray-700">Your Email</label>
-                    <input type="email" id="email" name="email" class="mt-1 p-2 border rounded-md w-[324px] h-[64px]" placeholder="Enter your email">
+                    <label for="email" class="block text-sm font-extrabold text-gray-700">Your Email</label>
+                    <input type="email" id="email" name="email" class="mt-1 p-2 border rounded-md w-full lg:w-[324px] lg:h-[64px]" placeholder="Enter your email">
                   </div>
                   </div>
                   
                 
                   <!-- Second Row -->
-                  <div class="flex gap-8">
+                  <div class="flex-cols-1 lg:flex gap-8">
                     <div class="mb-4">
-                      <label for="otherField" class="block text-sm font-medium text-gray-700">Subject</label>
-                      <input type="text" id="otherField" name="otherField" class="mt-1 p-2 border rounded-md w-[324px] h-[64px]" placeholder="Enter your subject">
+                      <label for="otherField" class="block text-sm font-extrabold text-gray-700">Subject</label>
+                      <input type="text" id="otherField" name="otherField" class="mt-1 p-2 border rounded-md w-full lg:w-[324px] lg:h-[64px]" placeholder="Enter your subject">
                     </div>
                   
                     <div class="mb-4">
-                      <label for="mobile" class="block text-sm font-medium text-gray-700">Phone Number</label>
-                      <input type="tel" id="mobile" name="mobile" class="mt-1 p-2 border rounded-md w-[324px] h-[64px]" placeholder="Enter your phone number">
+                      <label for="mobile" class="block text-sm font-extrabold text-gray-700">Phone Number</label>
+                      <input type="tel" id="mobile" name="mobile" class="mt-1 p-2 border rounded-md w-full lg:w-[324px] lg:h-[64px]" placeholder="Enter your phone number">
                     </div>
                   </div>
                   
                 
                   <!-- Third Row -->
                   <div class="mb-4">
-                    <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
-                    <textarea id="message" name="message" rows="4" class="mt-1 p-2 border rounded-md w-[672px] h-[370px]" placeholder="Write your message"></textarea>
+                    <label for="message" class="block text-sm font-extrabold text-gray-700">Message</label>
+                    <textarea id="message" name="message" rows="4" class="mt-1 p-2 border rounded-md w-full lg:w-[672px] lg:h-[370px]" placeholder="Write your message"></textarea>
                   </div>
                 
                   <!-- Submit Button -->
                   <div class="mt-8">
-                    <button type="submit" class="bg-red-500 text-white p-2 rounded-md w-[672px]">Send Message</button>
+                    <button type="submit" class="bg-red-500 text-white p-2 rounded-md w-full lg:w-[672px]">Send Message</button>
                   </div>
                 </form>
                 
@@ -467,7 +483,7 @@
             </div>
           <div class="mb-5">
             <div>
-              <h2 class="text-[#131318] text-center text-lg font-extrabold mb-8">Social Media</h2>
+              <h2 class="text-[#131318] text-center font-black text-xl mb-8">Social Media</h2>
             </div>
             <div class="flex justify-center items-center gap-3">
               <a href=""><img src="icons/facebook black.png" alt="" class="w-6 h-6"></a>
@@ -478,7 +494,7 @@
           </div>
         </section>
   </main>
-  <footer class="footer p-10 bg-base-200 text-base-content bg-[#131318] max-w-[1440px] max-h-[454px]">
+  <footer class="footer p-10 bg-base-200 text-base-content bg-[#131318] lg:max-w-[1440px] lg:max-h-[454px]">
     <aside>
       <h2 class="text-[#FFF] text-3xl font-extrabold">Get In Touch</h2>
       <p class="text-[#ffffff99] text-base font-medium leading-7">Dedicated team of skilled players<br>
@@ -493,29 +509,31 @@
         <p class="text-[#ffffff99] text-base font-medium leading-normal">(+62) 123-321-543</p>
       </div>
     </aside> 
-    <nav>
-      <header class="footer-title text-[#FFF] text-lg font-bold">Company</header> 
-      <a class="link link-hover text-[#ffffff99] text-base font-medium leading-10">About us</a>
-      <a class="link link-hover text-[#ffffff99] text-base font-medium leading-10">Leadership</a>
-      <a class="link link-hover text-[#ffffff99] text-base font-medium leading-10">Careers</a>
-      <a class="link link-hover text-[#ffffff99] text-base font-medium leading-10">News & Article</a>
-      <a class="link link-hover text-[#ffffff99] text-base font-medium leading-10">Legal Notice</a>
-    </nav> 
-    <nav>
-      <header class="footer-title text-[#FFF] text-lg font-bold">Support</header> 
-      <a class="link link-hover text-[#ffffff99] text-base font-medium leading-10">Help Center</a>
-      <a class="link link-hover text-[#ffffff99] text-base font-medium leading-10">FAQ</a>
-      <a class="link link-hover text-[#ffffff99] text-base font-medium leading-10">Ticket Support</a>
-      <a class="link link-hover text-[#ffffff99] text-base font-medium leading-10">Contact Us</a>
-    </nav> 
-    <nav>
-      <header class="footer-title text-[#FFF] text-lg font-bold">Services</header> 
-      <a class="link link-hover text-[#ffffff99] text-base font-medium leading-10">Academy</a>
-      <a class="link link-hover text-[#ffffff99] text-base font-medium leading-10">Group Lesson</a>
-      <a class="link link-hover text-[#ffffff99] text-base font-medium leading-10">Private Lesson</a>
-      <a class="link link-hover text-[#ffffff99] text-base font-medium leading-10">Hockeys for kids</a>
-      <a class="link link-hover text-[#ffffff99] text-base font-medium leading-10">Hockeys for Adult</a>
-    </nav>
+    <div class="grid grid-cols-2 lg:grid-cols-3 gap-16">
+      <nav class="grid grid-cols-1">
+        <header class="footer-title text-[#FFF] text-lg font-bold">Company</header> 
+        <a class="link link-hover text-[#ffffff99] text-base font-medium leading-10">About us</a>
+        <a class="link link-hover text-[#ffffff99] text-base font-medium leading-10">Leadership</a>
+        <a class="link link-hover text-[#ffffff99] text-base font-medium leading-10">Careers</a>
+        <a class="link link-hover text-[#ffffff99] text-base font-medium leading-10">News & Article</a>
+        <a class="link link-hover text-[#ffffff99] text-base font-medium leading-10">Legal Notice</a>
+      </nav> 
+      <nav class="grid grid-cols-1">
+        <header class="footer-title text-[#FFF] text-lg font-bold">Support</header> 
+        <a class="link link-hover text-[#ffffff99] text-base font-medium leading-10">Help Center</a>
+        <a class="link link-hover text-[#ffffff99] text-base font-medium leading-10">FAQ</a>
+        <a class="link link-hover text-[#ffffff99] text-base font-medium leading-10">Ticket Support</a>
+        <a class="link link-hover text-[#ffffff99] text-base font-medium leading-10">Contact Us</a>
+      </nav> 
+      <nav class="grid grid-cols-1">
+        <header class="footer-title text-[#FFF] text-lg font-bold">Services</header> 
+        <a class="link link-hover text-[#ffffff99] text-base font-medium leading-10">Academy</a>
+        <a class="link link-hover text-[#ffffff99] text-base font-medium leading-10">Group Lesson</a>
+        <a class="link link-hover text-[#ffffff99] text-base font-medium leading-10">Private Lesson</a>
+        <a class="link link-hover text-[#ffffff99] text-base font-medium leading-10">Hockeys for kids</a>
+        <a class="link link-hover text-[#ffffff99] text-base font-medium leading-10">Hockeys for Adult</a>
+      </nav>
+    </div>
   </footer>
 </body>
 </html>
